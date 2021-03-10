@@ -1,4 +1,5 @@
 @import "mispaletas";
+@import "acercademi";
 
 
 /*GENERALES*/
@@ -41,16 +42,21 @@ i{
 section {
   padding: 60px 0;
   display: block;
+} 
+
+.img-fluid{
+  border-radius: 5%;
 }
+
+
+
+
 
 /*ANIMACION DE SERVICIOS*/
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 #team {
     background: #eee;
 }
-
-
-
 
 
 section .section-title {
@@ -158,24 +164,6 @@ section .section-title {
     height: 120px;
 }
 
-/* ACERCA DE MI*/
-.infosobremi{
-  display: flex;
-  align-items: center;
-  padding: 3rem;
-  color: #007b5e;
-}
-.infosobremitexto{
-  display: flex;
-  flex-direction: column;
-  margin: 2rem 2rem;
-  text-align: center;
-  
-}
-.infosobremitexto p{
- padding: 1rem 2rem;
- color: $colorDorado;
-}
 
 
 

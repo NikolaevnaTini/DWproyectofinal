@@ -1,5 +1,17 @@
+/* ACERCA DE MI*/
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 @import url("https://fonts.googleapis.com/css?family=Questrial&display=swap");
+.acercademi {
+  background-image: url(https://images.unsplash.com/photo-1552152974-19b9caf99137?fit=crop&w=1350&q=80); }
+
+.acercademi p {
+  text-align: center;
+  color: #ffff; }
+
+.acercademi h2 {
+  color: #fff; }
+
+/*GENERALES*/
 html {
   font-size: 94%; }
 
@@ -7,6 +19,9 @@ html {
   padding: 0;
   margin: 0;
   box-sizing: border-box; }
+
+.row {
+  margin: 15px; }
 
 .jumbotron-image {
   background-position: center center;
@@ -18,22 +33,24 @@ form {
   background-image: url(https://images.unsplash.com/photo-1552152974-19b9caf99137?fit=crop&w=1350&q=80);
   color: #ffffff; }
 
-.row {
-  margin-top: 20px; }
-
-.col {
-  padding: 20px; }
-
 i {
   color: #DEB841;
   font-size: 10px; }
 
+section {
+  padding: 60px 0;
+  display: block; }
+
+.img-fluid {
+  border-radius: 5%; }
+
+.acercademi p {
+  text-align: center;
+  text-transform: capitalize; }
+
 /*ANIMACION DE SERVICIOS*/
 #team {
   background: #eee; }
-
-section {
-  padding: 60px 0; }
 
 section .section-title {
   text-align: center;
@@ -128,32 +145,14 @@ section .section-title {
   width: 120px;
   height: 120px; }
 
-/* ACERCA DE MI*/
-.infosobremi {
-  display: flex;
-  align-items: center;
-  padding: 3rem;
-  color: #007b5e; }
-
-.infosobremitexto {
-  display: flex;
-  flex-direction: column;
-  margin: 2rem 2rem;
-  text-align: center; }
-
-.infosobremitexto p {
-  padding: 1rem 2rem;
-  color: #DEB841; }
-
-section {
-  display: block; }
-
+/*CARDS INDEX*/
 .container .card {
   background-image: url(https://images.unsplash.com/photo-1552152974-19b9caf99137?fit=crop&w=1350&q=80);
   color: #fff; }
   .container .card a {
     text-decoration: none; }
 
+/*BOTON PROMOCION*/
 .boton-promocion {
   height: 40vh;
   background-image: url(https://images.unsplash.com/photo-1552152974-19b9caf99137?fit=crop&w=1350&q=80);
@@ -172,332 +171,6 @@ section {
   padding: 0.5em 0.7em; }
 
 /*CALENDARIO*/
-/*
-.calendar {
-    --side-padding: 10px; // padding to be applied to the side of the calendar
-    --border-radius: 14px; // border-radius of the main calendar shell
-    --accent-br: 15px; // border-radius for accents under dates on hover
-  
-    width: 200px;
-  
-    select {
-      background-color: #f3f4f6;
-      padding: 15px 20px;
-    }
-  
-    &__opts,
-    &__buttons {
-      background-color: #fff;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      column-gap: 15px;
-    }
-  
-    &__opts {
-      border-top-left-radius: var(--border-radius);
-      border-top-right-radius: var(--border-radius);
-      padding: 20px var(--side-padding);
-    }
-  
-    &__body {
-      background-image: linear-gradient(to bottom, #f3f4f6, #fff);
-    }
-  
-    &__days {
-      background-color: #fff;
-      padding: 0 var(--side-padding) 10px;
-      display: grid;
-      grid-template-columns: repeat(7, 1fr);
-  
-      & > div {
-        text-align: center;
-        font: {
-          weight: 700;
-          size: 1.02rem;
-        }
-        color: #c5c8ca;
-      }
-    }
-  
-    &__dates {
-      padding: 10px var(--side-padding);
-      display: grid;
-      grid-template-columns: repeat(7, 1fr);
-    }
-  
-    &__date {
-      --height: calc(400px / 6 - var(--side-padding));
-  
-      text-align: center;
-      height: var(--height);
-      line-height: var(--height);
-      font: {
-        weight: 600;
-        size: 1.02rem;
-      }
-      cursor: pointer;
-      position: relative;
-  
-      &::before {
-        content: "";
-        position: absolute;
-        background-color: rgba(255, 255, 255, 0);
-        width: 100%;
-        height: calc(var(--height) * 0.9);
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        border-radius: var(--accent-br);
-        transition: background-color 0.3s ease;
-      }
-  
-      &:not(.calendar__date--selected):not(.calendar__date--grey):hover::before {
-        background-color: #ededed;
-      }
-  
-      &--grey {
-        color: #c5c8ca;
-        cursor: not-allowed;
-      }
-  
-      &--selected {
-        color: #ff374b;
-  
-        &::before {
-          background-color: #ffeaec;
-          border-radius: 0px;
-        }
-      }
-  
-      &--first-date {
-        &::before {
-          border-top-left-radius: var(--accent-br);
-          border-bottom-left-radius: var(--accent-br);
-        }
-      }
-  
-      &--last-date {
-        &::before {
-          border-top-right-radius: var(--accent-br);
-          border-bottom-right-radius: var(--accent-br);
-        }
-      }
-  
-      &--range-start {
-        &::after {
-          content: "";
-          position: absolute;
-          bottom: 3px;
-          border-radius: 24px;
-          left: 50%;
-          transform: translateX(-50%);
-          background-color: #ff374b;
-          width: 10px;
-          height: 4px;
-        }
-      }
-  
-      &--range-end {
-        color: #fff;
-  
-        &::before {
-          box-shadow: 0 15px 20px -3px rgba(255, 55, 75, 0.35);
-          background-color: #ff374b;
-          border-radius: var(--accent-br);
-          z-index: 1;
-        }
-  
-        &::after {
-          content: "";
-          position: absolute;
-          height: calc(var(--height) * 0.9);
-          background-color: #ffeaec;
-          width: 50px;
-          top: 50%;
-          right: 50%;
-          transform: translateY(-50%);
-        }
-      }
-  
-      span {
-        position: relative;
-        z-index: 1;
-      }
-    }
-  
-    &__buttons {
-      padding: 10px var(--side-padding) 20px;
-      border-bottom-left-radius: var(--border-radius);
-      border-bottom-right-radius: var(--border-radius);
-    }
-  
-    &__button {
-      cursor: pointer;
-  
-      &--grey {
-        background-color: #f3f4f6;
-      }
-  
-      &--primary {
-        background-color: #1752ff;
-        color: #fff;
-        transition: box-shadow 0.3s cubic-bezier(0.21, 0.68, 0.09, 0.27),
-          transform 0.2s linear;
-  
-        &:hover {
-          box-shadow: 0 20px 30px -13px rgba(23, 82, 255, 0.45);
-          transform: translateY(-3px);
-        }
-  
-        &:active {
-          box-shadow: 0 10px 10px -6px rgba(23, 82, 255, 0.45);
-          transform: translateY(-1px);
-        }
-      }
-    }
-  }
-  
-
-.calendar-body {
-    display: grid;
-    place-items: center;
-    background-color: #eaedf2;
-    height: 100vh;
-    font: {
-      family: "Nunito", sans-serif;
-      size: 14px;
-    }
-    margin: 3vmin;
-  }
-  
-  select,
-  button {
-    font: {
-      family: inherit;
-      weight: 700;
-      size: 1.02rem;
-    }
-    border-radius: 20px;
-    outline: none;
-    border: 0;
-    padding: 15px 20px;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-  }
-  
-  select {
-    background: {
-      image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Capa_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='960px' height='560px' viewBox='0 0 960 560' enable-background='new 0 0 960 560' xml:space='preserve'%3E%3Cg id='Rounded_Rectangle_33_copy_4_1_'%3E%3Cpath d='M480,344.181L268.869,131.889c-15.756-15.859-41.3-15.859-57.054,0c-15.754,15.857-15.754,41.57,0,57.431l237.632,238.937 c8.395,8.451,19.562,12.254,30.553,11.698c10.993,0.556,22.159-3.247,30.555-11.698l237.631-238.937 c15.756-15.86,15.756-41.571,0-57.431s-41.299-15.859-57.051,0L480,344.181z'/%3E%3C/g%3E%3C/svg%3E");
-      size: 24px;
-      repeat: no-repeat;
-      position: calc(100% - var(--side-padding)) center;
-    }
-  }
-  
-/*CALENDARIO 2
-
-.body{
-    position: relative;
-    display: flex;
-    height: 100vh;
-    font-family: 'Poppins', sans-serif;
-    background: black;
-    
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      background: inherit;
-      filter: blur(10px);
-    }
-  }
-  
-  .calendar {
-    position: relative;
-    width: 300px;
-    background-color: #fff;
-    box-sizing: border-box;
-    box-shadow: 0 5px 50px rgba(#000, 0.5);
-    border-radius: 8px;
-    overflow: hidden;
-  }
-  
-  .calendar__picture {
-    position: relative;
-    height: 200px;
-    padding: 20px;
-    color: #fff;
-    background: #262626 url("https://images.unsplash.com/photo-1552152974-19b9caf99137?fit=crop&w=1350&q=80") no-repeat center / cover;
-    text-shadow: 0 2px 2px rgba(#000, 0.2);
-    box-sizing: border-box;
-    
-    &::before {
-      content: "";
-      left: 0;
-      right: 0;
-      top: 0;
-      bottom: 0;
-      position: absolute;
-      background: linear-gradient(to top, rgba(#000, 0.25), rgba(#000, 0.1));
-    }
-    
-    h2 {
-      margin: 0;
-    }
-    
-    h3 {
-      margin: 0;
-      font-weight: 500;
-    }
-  }
-  
-  .calendar__date {
-    padding: 20px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25px, 1fr));
-    grid-gap: 10px;
-    box-sizing: border-box;
-  }
-  
-  .calendar__day {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 25px;
-    font-weight: 600;
-    color: #262626;
-    
-    &:nth-child(7) {
-      color: #ff685d;
-    }
-  }
-  
-  .calendar__number {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 25px;
-    color: #262626;
-  
-    &:nth-child(7n) {
-      color: #ff685d;
-      font-weight: 700;
-    }
-    
-    &--current,
-    &:hover {
-      background-color: #009688;
-      color: #fff !important;
-      font-weight: 700;
-      cursor: pointer;
-    }
-  }
-*/
-/*CALENDARIO 3*/
 .calendario {
   background-image: url(https://images.unsplash.com/photo-1552152974-19b9caf99137?fit=crop&w=1350&q=80);
   font-family: 'Questrial', sans-serif;
