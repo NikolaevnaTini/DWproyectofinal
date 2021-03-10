@@ -1,6 +1,8 @@
 @import "mispaletas";
 
 
+/*GENERALES*/
+
 html{
   font-size: 94%;
 }
@@ -35,15 +37,21 @@ i{
     font-size: 10px;
   }
 
+  
+section {
+  padding: 60px 0;
+  display: block;
+}
+
 /*ANIMACION DE SERVICIOS*/
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 #team {
     background: #eee;
 }
 
-section {
-    padding: 60px 0;
-}
+
+
+
 
 section .section-title {
     text-align: center;
@@ -170,9 +178,6 @@ section .section-title {
 }
 
 
-section{
-    display: block;
-}
 
 /*CARDS INDEX*/
 .container .card{
