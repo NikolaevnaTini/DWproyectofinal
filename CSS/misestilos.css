@@ -44,10 +44,6 @@ section {
 .img-fluid {
   border-radius: 5%; }
 
-.acercademi p {
-  text-align: center;
-  text-transform: capitalize; }
-
 /*ANIMACION DE SERVICIOS*/
 #team {
   background: #eee; }
