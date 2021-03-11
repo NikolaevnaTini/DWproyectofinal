@@ -247,3 +247,7 @@ section .section-title {
         background: #0a3d62;
         color: #fff;
         font-weight: 600; }
+
+/*FORMULARIO*/
+.container h2 {
+  font-family: 'Questrial', sans-serif; }
