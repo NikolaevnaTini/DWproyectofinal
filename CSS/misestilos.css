@@ -26,7 +26,8 @@ html {
 .jumbotron-image {
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  filter: brightness(100%); }
 
 form {
   padding: 30px;
