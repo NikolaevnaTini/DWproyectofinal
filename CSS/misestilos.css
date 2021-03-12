@@ -157,8 +157,7 @@ section .section-title {
   border-radius: 5px;
   background-color: #FF8E72;
   font-family: 'Lato', sans-serif;
-  font-size: 1.2em;
-  padding: 0.5em 0.7em; }
+  font-size: 1.2em; }
 
 .boton-promocion-agenda2 {
   color: black;
@@ -167,8 +166,7 @@ section .section-title {
   border-radius: 5px;
   background-color: #ffffff;
   font-family: 'Lato', sans-serif;
-  font-size: 1.2em;
-  padding: 0.5em 0.7em; }
+  font-size: 1.2em; }
 
 /*CALENDARIO*/
 .calendario {
