@@ -2,6 +2,10 @@
 @import "acercademi";
 
 
+/*IMPORTAR IMAGENES*//*
+("../imagenes css/bambu.jpg")/*
+
+
 /*GENERALES*/
 
 html{
@@ -19,15 +23,15 @@ html{
   margin: 15px;
 }
 
-.jumbotron-image {
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+.imagenjumbo .jumbotron{
+  background-image:url("../imagenes css/turquesa.jpg");
+  background-size: cover;
+}
+
 
 form{
       padding: 30px;
-      background-image:url(https://images.unsplash.com/photo-1552152974-19b9caf99137?fit=crop&w=1350&q=80);
+      background-image:url("../imagenes css/turquesa.jpg");
       color: #ffffff;
   }
 
@@ -52,19 +56,23 @@ section {
 /*BOTON PROMOCION*/
 .boton-promocion{
         height: 40vh;
-        background-image:url(https://images.unsplash.com/photo-1552152974-19b9caf99137?fit=crop&w=1350&q=80);
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
     }
 
+.boton{
+  background-image:url("../imagenes css/turquesa.jpg");
+    background-size: cover;
+  }
+
 .boton-promocion-agenda{
     color: black;
     font-weight: bold;
     border: 1px solid #1F1C1B;
     border-radius: 5px;
-    background-color: $colorRosaFuerte;
+    background-color: $colorDorado;
     font-family:'Lato', sans-serif;
     font-size: 1.2em;
    
@@ -83,7 +91,7 @@ section {
 @import url('https://fonts.googleapis.com/css?family=Questrial&display=swap');
 
 .calendario{
-    background-image:url(https://images.unsplash.com/photo-1552152974-19b9caf99137?fit=crop&w=1350&q=80);
+    background-image:url("../imagenes css/turquesa.jpg");
   font-family: 'Questrial', sans-serif;
   display:flex;
   justify-content:center;
@@ -216,7 +224,7 @@ section {
 }
 
 .seccion1{
-  background-image: url("../imagenes css/manosinicio.jpg");
+  background-image: url("../imagenes css//mani3.jpg");
   padding-top: 4rem;
   padding-bottom: 5rem;
   
@@ -230,7 +238,7 @@ section {
 }
 
 .seccion3{
-  background-image: url("../imagenes css/pedicuria.jpg");
+  background-image: url("../imagenes css/pedi1.jpg");
   padding-top: 4rem;
   padding-bottom: 5rem;
   
