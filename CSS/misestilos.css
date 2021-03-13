@@ -1,7 +1,7 @@
 /* ACERCA DE MI*/
 @import url("https://fonts.googleapis.com/css?family=Questrial&display=swap");
 .acercademi {
-  background-color: #fff; }
+  size: auto; }
 
 .acercademi p {
   text-align: center;
