@@ -28,7 +28,7 @@ html {
   margin: 15px; }
 
 .imagenjumbo .jumbotron {
-  background-image: url("../imagenes css/turquesa.jpg");
+  background-image: url("../imagenes/turquesa.jpg");
   background-size: cover; }
 
 form {
@@ -56,7 +56,7 @@ section {
   align-items: center; }
 
 .boton {
-  background-image: url("../imagenes css/turquesa.jpg");
+  background-image: url("../imagenes/turquesa.jpg");
   background-size: cover; }
 
 .boton-promocion-agenda {
@@ -180,17 +180,17 @@ section {
   background-size: cover; }
 
 .seccion1 {
-  background-image: url("../imagenes css//mani3.jpg");
+  background-image: url("../imagenes/mani3.jpg");
   padding-top: 4rem;
   padding-bottom: 5rem; }
 
 .seccion2 {
-  background-image: url("../imagenes css/reflexologia.jpg");
+  background-image: url("../imagenes/reflexologia.jpg");
   padding-top: 4rem;
   padding-bottom: 5rem; }
 
 .seccion3 {
-  background-image: url("../imagenes css/pedi1.jpg");
+  background-image: url("../imagenes/pedi1.jpg");
   padding-top: 4rem;
   padding-bottom: 5rem; }
 
