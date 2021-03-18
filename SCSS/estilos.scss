@@ -67,25 +67,31 @@ section {
     background-size: cover;
   }
 
-.boton-promocion-agenda{
-    color: black;
+  .boton-promocion-agenda{
+    background-color: $colorTurquesa1;
+    border: none;
+    border-radius: 0.25rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
     font-weight: bold;
-    border: 2px solid #1F1C1B;
-    border-radius: 5px;
-    background-color: $colorRosaFuerte;
-    font-family:'Lato', sans-serif;
-    font-size: 1.5em;
-   
-}
-.boton-promocion-agenda2{
-  color: black;
-  font-weight: bold;
-  border: 1px solid #1F1C1B;
-  border-radius: 5px;
-  background-color: $colorDorado;
-  font-family:'Lato', sans-serif;
-  font-size: 1.2em;
-}
+    text-decoration: none;
+    color: white;
+    transition: background-color 0.2s, padding 0.2s;
+    margin: auto;
+  }
+
+  .boton-promocion-agenda2{
+    background-color: $colorDorado;
+    border: none;
+    border-radius: 0.25rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    transition: background-color 0.2s, padding 0.2s;
+    margin: auto;
+  }
 
 /*CALENDARIO*/ 
 @import url('https://fonts.googleapis.com/css?family=Questrial&display=swap');
