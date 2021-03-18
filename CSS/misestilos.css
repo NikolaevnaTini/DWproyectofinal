@@ -64,10 +64,11 @@ section {
   border: none;
   border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
-  font-size: 1rem;
+  font-size: 1.5rem;
+  font-family: 'Lato', sans-serif;
   font-weight: bold;
   text-decoration: none;
-  color: white;
+  color: black;
   transition: background-color 0.2s, padding 0.2s;
   margin: auto; }
 
@@ -78,8 +79,9 @@ section {
   padding: 0.75rem 1.5rem;
   font-size: 1rem;
   font-weight: bold;
+  font-family: 'Lato', sans-serif;
   text-decoration: none;
-  color: white;
+  color: black;
   transition: background-color 0.2s, padding 0.2s;
   margin: auto; }
 
@@ -169,37 +171,45 @@ section {
   font-family: 'Questrial', sans-serif; }
 
 /**/
-.cards h5 {
-  color: #fff;
+.card h5 {
+  color: #66635B;
   font-weight: bold;
   font-size: 1.5rem;
   padding: 1rem;
   font-family: 'Lato', sans-serif; }
 
-.cards p {
+.card p {
   font-style: italic;
   font-size: 1.2rem;
-  color: #fff; }
+  color: #66635B; }
 
-.parallax {
+/*
+.parallax{
   background: #fff fixed no-repeat 40% 40%;
-  background-size: cover; }
+  background-size: cover;
+}
 
-.seccion1 {
+.seccion1{
   background-image: url("../imagenes/mani3.jpg");
   padding-top: 4rem;
-  padding-bottom: 5rem; }
+  padding-bottom: 5rem;
+  
+}
 
-.seccion2 {
+.seccion2{
   background-image: url("../imagenes/reflexologia.jpg");
   padding-top: 4rem;
-  padding-bottom: 5rem; }
+  padding-bottom: 5rem;
+  
+}
 
-.seccion3 {
+.seccion3{
   background-image: url("../imagenes/pedi1.jpg");
   padding-top: 4rem;
-  padding-bottom: 5rem; }
-
+  padding-bottom: 5rem;
+  
+}
+*/
 /*jumbotron*/
 .display-4 {
   font-family: 'Lato', sans-serif; }
