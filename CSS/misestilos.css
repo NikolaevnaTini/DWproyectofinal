@@ -171,49 +171,24 @@ section {
   font-family: 'Questrial', sans-serif; }
 
 /**/
-.card h5 {
-  color: #66635B;
-  font-weight: bold;
-  font-size: 1.5rem;
-  padding: 1rem;
-  font-family: 'Lato', sans-serif; }
-
-.card p {
-  font-style: italic;
-  font-size: 1.2rem;
-  color: #66635B; }
-
-/*
-.parallax{
-  background: #fff fixed no-repeat 40% 40%;
-  background-size: cover;
-}
-
-.seccion1{
-  background-image: url("../imagenes/mani3.jpg");
-  padding-top: 4rem;
-  padding-bottom: 5rem;
-  
-}
-
-.seccion2{
-  background-image: url("../imagenes/reflexologia.jpg");
-  padding-top: 4rem;
-  padding-bottom: 5rem;
-  
-}
-
-.seccion3{
-  background-image: url("../imagenes/pedi1.jpg");
-  padding-top: 4rem;
-  padding-bottom: 5rem;
-  
-}
-*/
-/*jumbotron*/
-.display-4 {
-  font-family: 'Lato', sans-serif; }
-
-/*SERVICIOS*/
-.servicios {
-  margin-bottom: 2rem; }
+.card {
+  /*jumbotron*/
+  /*SERVICIOS*/ }
+  .card h5 {
+    color: #66635B;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 1rem;
+    font-family: 'Lato', sans-serif; }
+  .card p {
+    font-style: italic;
+    font-size: 1.2rem;
+    color: #66635B; }
+  .card .display-4 {
+    font-family: 'Lato', sans-serif; }
+  .card .servicios {
+    margin: 2rem; }
+  .card .container h2 {
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    text-align: center; }
