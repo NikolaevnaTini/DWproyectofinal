@@ -68,7 +68,7 @@ section {
   }
 
   .boton-promocion-agenda{
-    background-color:$colorTurquesa1;
+    background-color: $colorTurquesa1;
     border: none;
     border-radius: 0.25rem;
     padding: 0.75rem 1.5rem;
@@ -95,6 +95,7 @@ section {
     margin: auto;
   }
 
+
 /*FORMULARIO*/ 
 .container h2{
   font-family: 'Questrial', sans-serif;
@@ -115,11 +116,3 @@ section {
     font-size: 1.2rem;
     color:$colorGris1;
   }
-
-
-/*jumbotron*/
-
-.h2 .text-black{
-  font-family:'Lato', sans-serif;
-}
-
